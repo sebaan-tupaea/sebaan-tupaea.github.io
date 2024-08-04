@@ -43,7 +43,7 @@ body {
   background-color: #4a5759;
   color: #b0c4b1;
   text-align: center;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -67,7 +67,6 @@ body {
   border-radius: 5px;
 }
 
-/* Responsive styles */
 @media (max-width: 1200px) {
   .navbar a {
     margin: 0 0.5rem;
