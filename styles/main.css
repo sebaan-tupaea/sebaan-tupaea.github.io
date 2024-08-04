@@ -1,0 +1,145 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #dedbd2;
+}
+
+.header {
+  background-color: #f7e1d7;
+  color: #edafb8;
+  padding: 1rem 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #b0c4b1;
+  color: #fff;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.navbar a {
+  color: #4a5759;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.main-content {
+  padding: 1rem;
+}
+
+.article {
+  background-color: #ffffffc6;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.footer {
+  background-color: #4a5759;
+  color: #b0c4b1;
+  text-align: center;
+  padding: 1rem 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.fixed-element {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #b0c4b1;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.absolute-element {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #f7e1d7;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .navbar a {
+    margin: 0 0.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .header,
+  .navbar,
+  .main-content,
+  .footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .article {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .fixed-element,
+  .absolute-element {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar a {
+    margin: 0.5rem 0;
+  }
+
+  .article {
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+
+  .fixed-element,
+  .absolute-element {
+    top: 5px;
+    right: 5px;
+    left: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header,
+  .navbar,
+  .main-content,
+  .footer {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .navbar a {
+    margin: 0.5rem 0;
+  }
+
+  .article {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .fixed-element,
+  .absolute-element {
+    top: 2px;
+    right: 2px;
+    left: 2px;
+  }
+}
