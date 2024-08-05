@@ -5,12 +5,21 @@ body {
   background-color: #dedbd2;
 }
 
+.header,
+.navbar,
+.footer {
+  width: 100%;
+  max-width: 1200px; /* Adjust this value to your preferred width */
+  margin: 0 auto;
+  padding: 0 1rem; /* Add some padding for spacing */
+  box-sizing: border-box; /* Ensure padding is included in the element's total width */
+}
+
 .header {
   background-color: #f7e1d7;
   color: #edafb8;
   padding: 1rem 0;
   text-align: center;
- width: 100%;
 }
 
 .header-img {
@@ -26,7 +35,6 @@ body {
   color: #fff;
   padding: 0.5rem 0;
   text-align: center;
-   width: 100%;
 }
 
 .navbar a {
@@ -40,7 +48,7 @@ body {
 }
 
 .article {
-  background-color: #ffffffc6;
+  background-color: rgba(255, 255, 255, 0.8);
   margin-bottom: 1rem;
   padding: 1rem;
   border-radius: 5px;
@@ -48,6 +56,7 @@ body {
   position: relative;
   margin: 0 auto;
   max-width: 90%;
+  text-align: left;
 }
 
 .footer {
@@ -55,7 +64,6 @@ body {
   color: #b0c4b1;
   text-align: center;
   padding: 10px 0;
-  width: 100%;
 }
 
 .fixed-element {
@@ -80,7 +88,7 @@ body {
   .navbar a {
     margin: 0 0.5rem;
   }
-  
+
   .header,
   .navbar,
   .main-content,
@@ -88,7 +96,6 @@ body {
     padding-left: 1rem;
     padding-right: 1rem;
     text-align: center;
-     width: 100%;
   }
 
   .article {
@@ -105,10 +112,8 @@ body {
 @media (min-width: 768px) {
   .navbar {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     text-align: center;
-     width: 100%;
   }
 
   .navbar a {
@@ -140,7 +145,6 @@ body {
     padding-left: 2rem;
     padding-right: 2rem;
     text-align: center;
-     width: 100%;
   }
 
   .article {
@@ -163,7 +167,6 @@ body {
     padding-left: 3rem;
     padding-right: 3rem;
     text-align: center;
-     width: 100%;
   }
 
   .article {
