@@ -9,10 +9,10 @@ body {
 .navbar,
 .footer {
   width: 100%;
-  max-width: 1200px; /* Adjust this value to your preferred width */
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem; /* Add some padding for spacing */
-  box-sizing: border-box; /* Ensure padding is included in the element's total width */
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
 .header {
