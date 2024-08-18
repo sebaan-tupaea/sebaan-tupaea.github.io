@@ -116,6 +116,16 @@ nav {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+footer {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+  box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
 @media (max-width: 768px) {
   .hero-text h1 {
     font-size: 28px;
@@ -146,16 +156,6 @@ nav {
   .gallery-item {
     flex: 1 1 calc(50% - 20px);
   }
-}
-
-footer {
-  background-color: #fff;
-  padding: 20px;
-  text-align: center;
-  font-size: 14px;
-  color: #777;
-  box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.1);
-  margin-top: 40px;
 }
 
 @media (max-width: 480px) {
