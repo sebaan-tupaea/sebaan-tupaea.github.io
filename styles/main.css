@@ -69,36 +69,24 @@ nav {
 }
 
 .content {
-  padding: 40px 20px;
-  max-width: 1000px;
-  margin: 0 auto;
+  padding: 20px;
+}
+
+.blog-posts {
+  display: flex;
+  gap: 20px;
 }
 
 .blog-post {
-  background-color: #fff;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-}
-
-.blog-post h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.blog-post p {
-  font-size: 16px;
-  color: #666;
-  margin-bottom: 15px;
+  flex: 1;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .read-more {
-  font-weight: bold;
   color: #007bff;
-  font-size: 16px;
-  display: inline-block;
-  margin-top: 10px;
+  text-decoration: none;
 }
 
 .read-more:hover {
