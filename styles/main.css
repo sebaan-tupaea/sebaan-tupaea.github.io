@@ -74,23 +74,25 @@ nav {
 
 .blog-posts {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
 .blog-post {
-  flex: 1;
+  flex: 1 1 calc(50% - 20px);
   border: 1px solid #ddd;
-  padding: 10px;
+  padding: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.read-more {
-  color: #007bff;
   text-decoration: none;
+  color: inherit;
 }
 
-.read-more:hover {
-  text-decoration: underline;
+.blog-post h2 {
+  margin-top: 0;
+}
+
+.blog-post:hover {
+  background-color: #f9f9f9;
 }
 
 footer {
@@ -102,6 +104,7 @@ footer {
   box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.1);
   margin-top: 40px;
 }
+
 @media (max-width: 768px) {
   .hero-text h1 {
     font-size: 28px;
@@ -156,5 +159,6 @@ footer {
 
   .blog-post {
     padding: 10px;
+    flex: 1 1 100%;
   }
 }
