@@ -52,7 +52,7 @@ nav {
 }
 
 .hero {
-  background-color: #b0c4b1;
+  background-color: #fff;
   padding: 100px 20px;
   text-align: center;
 }
@@ -86,7 +86,7 @@ nav {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-decoration: none;
   color: inherit;
-  background-color: #fff;
+  background-color: #b0c4b1;
 }
 
 .blog-post h2 {
