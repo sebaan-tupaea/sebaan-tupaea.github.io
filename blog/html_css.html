@@ -1,90 +1,110 @@
 <!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to Seb's Space, where I share my reflections, blog posts, and learning plans."
+    />
     <title>CSS Concepts</title>
-     <link
-        rel="stylesheet"
-        href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/main.css" />
+    <style>
+      
+      .content-wrapper {
+          display: flex;
+          align-items: flex-start; 
+          padding: 2%; 
+      }
+      
+      .content-wrapper img {
+          width: 50vw; 
+          height: 60vh;
+          object-fit: cover;
+      }
+      .content-wrapper .blog-posts {
+          flex: 1;
+          background-color: #B0C4B1;
+          padding: 2%;
+          height: 60vh;
+          overflow-y: auto; 
+          box-sizing: border-box;
+      }
+    </style>
+
   </head>
   <body>
-    <header class="header">
-      <a href= "../index.html">
-        <img
-          src="https://fontmeme.com/permalink/240804/4125af06c73c29ac1568fd73ab004522.png"
-         alt="Header Image" class="header-img"
-        />
-      </a>
-      <p></p>
+    <header>
+      <nav>
+        <a href="../index.html" class="logo">
+          <img
+            src="https://fontmeme.com/permalink/240818/3a49eba1842af10c92b846ec2575e730.png"
+            alt="Header Image"
+            class="header-img"
+          />
+        </a>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li>
+            <a href="https://github.com/sebaan-tupaea/reflections"
+              >Reflections</a
+            >
+          </li>
+          <li><a href="/blog/blog-index.html">Blog</a></li>
+          <li><a href="/blog/learning-plan.html">Learning Plan</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <nav class="navbar">
-      <a
-        href="../blog/learning-plan.html"
-        >My Learning Plan</a
-      >
-      <a
-        href= "../blog/identity-values.html"
-        >Identity Values</a
-      >
-      <a
-        href= "../blog/te-houtaewa-template.html"
-        >Te Houtaewa</a
-      >
-    </nav>
- 
-    <main class="main-content">
-      <article class="article">
-        <h3>Technical Blog - CSS Concepts</h3>
-        <h1>What is the difference between Margin, Border, and Padding?</h1>
-        <h5>Sunday 4th August 2024</h5>
-        <p>
-          Margin, border, and padding are style features that help manage the
-          space and arrangement of elements on a webpage.
-        </p>
-
-        <div class="example">
-          <h2>Margin</h2>
-          <p>
-            <strong>What it does:</strong> Adds space outside the edge of an
-            element, pushing it away from other things.
-          </p>
-          <p>
-            <strong>Example:</strong> If you have a picture with a margin, it
-            will move away from nearby text or other images.
-          </p>
+    <main>
+      <section class="hero" style="background-color: #F6F6F3;">
+        <div class="hero-text">
+          <h1 style="color: #D9596C;">What is the difference between Margin, Border, and Padding?</h1>
+          <p>Conceptualising CSS - Who is she?</p>
         </div>
+      </section>
 
-        <div class="example">
-          <h2>Border</h2>
-          <p>
-            <strong>What it does:</strong> Adds a line around the edge of an
-            element. It’s like drawing a frame around a picture.
-          </p>
-          <p>
-            <strong>Example:</strong> If you put a border around a button, it
-            will have a visible line around it that can be styled in different
-            colours or thicknesses.
-          </p>
+      <div class="content-wrapper">
+        <img src="../images/Update css margin vs padding-5 .webp" alt="margin, border and padding" />
+      <section style="background-color: #B0C4B1;">
+        <div class="blog-posts">
+          <h4> Margin, border, and padding are style features that help manage the
+            space and arrangement of elements on a webpage.</h4>
+          <ol>
+            <li style="font-weight: bold;">Margin</li>
+              <p><strong>What it does:</strong> Adds space outside the edge of an
+                element, pushing it away from other things.</p>
+                <p>
+                  <strong>Example:</strong> If you have a picture with a margin, it
+                  will move away from nearby text or other images.
+                </p>
+                <li style="font-weight: bold;"> Border</li>
+                <p>
+                  <strong>What it does:</strong> Adds a line around the edge of an
+                  element. It’s like drawing a frame around a picture.
+                </p>
+                <p>
+                  <strong>Example:</strong> If you put a border around a button, it
+                  will have a visible line around it that can be styled in different
+                  colours or thicknesses.
+                </p>
+            <li style="font-weight: bold;">Padding</li>
+            <p>
+              <strong>What it does:</strong> Adds space inside the edge of an
+              element, between the content and the border.
+            </p>
+            <p>
+              <strong>Example:</strong> If you have a button with padding, the
+              text inside it will be pushed away from the edge, making it look
+              nicer and easier to read.
+            </p>
+          </ol>
+        </a>
         </div>
-
-        <div class="example">
-          <h2>Padding</h2>
-          <p>
-            <strong>What it does:</strong> Adds space inside the edge of an
-            element, between the content and the border.
-          </p>
-          <p>
-            <strong>Example:</strong> If you have a button with padding, the
-            text inside it will be pushed away from the edge, making it look
-            nicer and easier to read.
-          </p>
-        </div>
-      </article>
+      </section>
     </main>
 
-    <footer class="footer">
-      <p>Stressed & trying my best, Sebaan &hearts;</p>
+    <footer>
+      <p>&copy; 2024 Seb's Space. All rights reserved.</p>
     </footer>
   </body>
 </html>
