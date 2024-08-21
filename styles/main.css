@@ -101,12 +101,14 @@ nav {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 
 .gallery-item {
   position: relative;
   width: 100%;
   max-width: 300px;
+  box-sizing: border-box;
 }
 
 .gallery-item img {
@@ -168,7 +170,6 @@ footer {
 
   .blog-post {
     flex: 1 1 calc(50% - 20px);
-    padding: 15px;
   }
 
   .gallery-item {
@@ -203,7 +204,6 @@ footer {
 
   .blog-post {
     flex: 1 1 100%;
-    padding: 10px;
   }
 
   .gallery-item {
