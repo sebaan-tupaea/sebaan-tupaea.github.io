@@ -57,7 +57,7 @@ nav {
   text-align: center;
   position: relative;
 }
-.watermark-1 {
+.watermark-1::before {
   content: 'Cultural';
   position: absolute;
   bottom: 10px;
@@ -67,7 +67,7 @@ nav {
   transform: rotate(-20deg);
 }
 
-.watermark-2 {
+.watermark-2::before {
   content: 'Technical';
   position: absolute;
   bottom: 10px;
