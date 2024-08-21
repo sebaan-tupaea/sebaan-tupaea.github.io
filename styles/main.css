@@ -55,6 +55,26 @@ nav {
   background-color: #f7e1d7;
   padding: 100px 20px;
   text-align: center;
+  position: relative;
+}
+.watermark-1::before {
+  content: 'Cultural';
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.3);
+  transform: rotate(-20deg);
+}
+
+.watermark-2::before {
+  content: 'Technical';
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.3);
+  transform: rotate(20deg);
 }
 
 .hero-text h1 {
