@@ -138,7 +138,7 @@ nav {
 }
 
 footer {
-  background-image: 'https://github.com/sebaan-tupaea/sebaan-tupaea.github.io/blob/main/images/grass.jpg';
+  background-image: url('../images/grass.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
