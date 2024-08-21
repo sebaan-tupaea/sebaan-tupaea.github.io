@@ -3,7 +3,10 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-image: url('../images/sand.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 a {
