@@ -101,19 +101,37 @@ nav {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 20px;
 }
 
 .gallery-item {
-  flex: 1 1 calc(25% - 20px);
-  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  max-width: 300px;
 }
 
 .gallery-item img {
   width: 100%;
   height: auto;
-  border: 1px solid #ddd;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+.image-caption {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 3px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.gallery-item:hover .image-caption {
+  opacity: 1;
 }
 
 footer {
