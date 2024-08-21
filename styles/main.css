@@ -3,7 +3,7 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
-  background-image: url('../images/sand.jpg');
+  background-color: #f4f4f4;
 }
 
 a {
@@ -138,10 +138,7 @@ nav {
 }
 
 footer {
-  background-image: url('../images/grass.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: #608062;
   padding: 20px;
   text-align: center;
   font-size: 14px;
